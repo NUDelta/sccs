@@ -1,0 +1,17 @@
+<template name='chatBox'>
+  <a id='party-line' style="color:purple">banter</a>
+  <div id="chat-content">
+    <div id='messages'>
+      {{#each messages}}
+      {{>chatMessage}}
+      {{/each}}
+    </div>
+    <input id='chat-message'/> <button class='btn btn-xs btn-primary' id='send'>Send</button>
+  </div>
+</template>
+
+<template name='chatMessage'>
+  <div>
+    <b>{{user}}:</b> {{message}}
+  </div>
+</template>
