@@ -4,12 +4,13 @@
 
 <body>
   <h1>EECS 395/495: Social and Crowd Computing</h1>
-  {{> applyto}}
+<!--   {{> applyto}}
+ -->
   {{> info}}
   {{> search}}
   {{> class}}
   {{> readings}}
-  {{> projects}}
+  <!-- {{> projects}} -->
   {{> hello}}
 
 <div id='chatbox' class="col-md-10">
@@ -17,9 +18,9 @@
 </div>
 </body>
 
-<template name="applyto">
-  <h3><a href="https://docs.google.com/forms/d/122d89f4QliDD0VqdGu5-IbdWf7KGbtzEg07ZWGMFE7k/viewform">Interested? Apply to join in Fall 2015</a></h3>
-</template>
+<!-- <template name="applyto">
+  <h3><a href="https://docs.google.com/forms/d/122d89f4QliDD0VqdGu5-IbdWf7KGbtzEg07ZWGMFE7k/viewform">Interested? Apply to join us in Fall 2015</a></h3>
+</template> -->
 
 <template name="search">
   <input id="textsearch" placeholder="just words in the sky"/>
@@ -29,7 +30,7 @@
 <div>w/ <a href="http://www.haoqizhang.com">Haoqi Zhang</a></div>
 <div>in Ford G201 & G205</div>
 <div><a href="#class_head">research</a> / <a href="#readings_head">seminar</a> / <a href="#projects_head">hackathon</a></div>
-<div><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/pubhtml?gid=1008357957&single=true">Ten impossible challenges</a></div>
+<!-- <div><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/pubhtml?gid=1008357957&single=true">Ten impossible challenges</a></div> -->
 <a href="http://wordle.net" target="_blank"><img width="800px" src="cloud.png"/></a><br/>
 </template>
 
@@ -39,17 +40,39 @@
 </template>
 
 <template name="class">
-<h3 id="class_head">In Class</h3>
-
-<dl>
-<dt>wednesday, 9/24</dt><dd>take a stand / count # ppl in room / meet x ppl in 10 min / pre-survey / learn a new language, with resources</dd>
+  <h3 id="class_head">In Class</h3>
+  <dt>monday, 9/21</dt><dd>Intro / <a href="https://docs.google.com/forms/d/1SsninKQiQW1L6cfr16rPxp9V6-aUflVzP8yOTCx2DdM/viewform?usp=send_form">Pre-survey</a></dd>
+  <dt>wednesday, 9/23</dt><dd>How to read a paper / understanding a paper's research contributions</dd>
+  <dt>monday, 9/28</dt><dd>demo: social projects / learn to give feedback on projects</dd>
+  <dt>wednesday, 9/30</dt><dd>discuss: Volunteer crowdsourcing papers</dd>
+  <dt>monday, 10/5</dt><dd>demo: Volunteer crowdsourcing projects</dd>
+  <dt>wednesday, 10/7</dt><dd>discuss: Crowd-powered systems papers </dd>
+  <dt>monday, 10/12</dt><dd>discuss: Collaborative Crowdsourcing papers</dd>
+  <dt>wednesday, 10/14</dt><dd>workshop: Module on crowdsourcing / work time</dd>
+  <dt>monday, 10/19</dt><dd>demo: crowdsourcing complex task project</dd>
+  <dt>wednesday, 10/21</dt><dd>PITCH mid-term project / worktime</dd>
+  <dt>monday, 10/26</dt><dd>worktime</dd>
+  <dt>wednesday, 10/28</dt><dd>discuss: online communities papers</dd>
+  <dt>monday, 11/2</dt><dd>go over mid-quarter project </dd>
+  <dt>wednesday, 11/4</dt><dd>discuss: Q&A papers</dd>
+  <dt>monday, 11/9</dt><dd>worktime</dd>
+  <dt>wednesday, 11/11</dt><dd>worktime</dd>
+  <dt>monday, 11/16</dt><dd>Go over mini-project / Reputation & Recommendation</dd>
+  <dt>wednesday, 11/18</dt><dd>continue on Reputation & Recommendation / PITCH for final project</dd>
+  <dt>monday, 11/23</dt><dd>worktime</dd>
+  <dt>wednesday, 11/25</dt><dd>Thanksgiving</dd>
+  <dt>monday, 11/30</dt><dd>go over impossible challenges - work time on final project</dd>
+  <dt>wednesday, 12/2</dt><dd>work time on final projects - an optional topic on social computing </dd>
+  <dt>monday, 12/7</dt><dd>Present final projects</dd>
+</template>
+<!-- <dt>wednesday, 9/24</dt><dd>take a stand / count # ppl in room / meet x ppl in 10 min / pre-survey / learn a new language, with resources</dd>
 <dt>monday, 9/29</dt><dd>demo / reflection / how to read a paper / <a href="https://docs.google.com/spreadsheets/d/120B3bvLk65TUC2lFnEe3E4xLUs-ww6AoL4HYSSKaXKM/edit#gid=0">demos & languages</a></dd>
 <dt>wednesday, 10/1</dt><dd>discuss: gwaps, citizen science, motivation, quality control / hackathon start: brainstorm, toy blocks, pitch, group </dd>
 <dt>monday, 10/6</dt><dd>unpaid crowdsourcing demo & critique/ i like, i wish, what if</dd>
 <dt>wednesday, 10/8</dt><dd>understanding a paper's research contribution / discuss:  crowd-powered systems / hackathon start: toy blocks, table groups</dd>
 <dt>monday, 10/13</dt><dd><a href="https://docs.google.com/spreadsheets/d/1DN0keEGW56bhKmI80AMBtPQ9VnsBxyguzz6026ttaf0/edit#gid=1585594468">hackathon feedback: crowd powered systems</a></dd>
 <dt>wednesday, 10/15</dt><dd><a href="https://docs.google.com/spreadsheets/d/1ldeCfw0BD0k438N7sB8StdWQA70ylAVQnneFRj18rcc/edit?usp=sharing">summary of crowd-powered systems (generated live)</a> /  discuss: collaborative crowdsourcing</dd>
-<dt>monday, 10/20</dt><dd>the process of coming up with an idea / <a href="https://docs.google.com/spreadsheets/d/10oVx47_bL1AFDDd36mlF_3ZFgxffrflbopsYgBjpoYk/pubhtml?gid=319309570&single=true">struggles in coming up with a research questions</a> / discuss: collaborative crowdsourcing</dd> 
+<dt>monday, 10/20</dt><dd>the process of coming up with an idea / <a href="https://docs.google.com/spreadsheets/d/10oVx47_bL1AFDDd36mlF_3ZFgxffrflbopsYgBjpoYk/pubhtml?gid=319309570&single=true">struggles in coming up with a research questions</a> / discuss: collaborative crowdsourcing</dd>
 <dt>wednesday, 10/22</dt><dd>evaluating which project ideas to pursue / discuss: real-time crowd work / prototyping Chorus in 3 minutes</dd>
 <dt>monday, 10/27</dt><dd>groups of 3 / pitch / <a href="https://docs.google.com/spreadsheets/d/1ltQ2yAXKTrCsSGqVc3s_j_Avr1FlydgMCbF9i6i8CKs/edit#gid=0">project groups</a></dd>
 <dt>wednesday, 10/29</dt><dd>group work / lo-fi prototypes / status update</dd>
@@ -59,13 +82,12 @@
 <dt>wednesday, 11/12</dt><dd><a href="https://docs.google.com/presentation/d/1RRSRu71RRZjErnjbASMb8W_JKQ3EpZ3xZK-Tku3MByQ/edit?usp=sharing">Q\&A pecha kucha</a> / <a href="https://docs.google.com/document/d/1-yEcT4-bPujK7xDD3ZnC5idirGFWVRM2HmlbIHlKpRk/edit?usp=sharing">tips \& reflections on giving a good pecha kucha presentation</a> /  student-led discussion </dd>
 <dt>monday, 11/17</dt><dd><a href="https://docs.google.com/presentation/d/1Sh4guL4gGADoPZ25LLXmabenOjDhZ-74FG3nD2yZGL4/edit?usp=sharing">Kraut \& Resnick pecha kucha</a> / student-led discussion </dd>
 <dt>wednesday, 11/19</dt><dd><a href="https://docs.google.com/presentation/d/1RL8x_gdDnv_mq5wCjUsGEClTd4MTZGU_0bE_58ycPOU/pub?start=false&loop=false&delayms=60000">pecha kucha on online communities (4chan, BitTorrent, CouchSurfing, Crowdfunding)</a> / pitching end-of-quarter project ideas</dd>
-<dt>monday, 11/24</dt><dd>project work time / <a href="https://docs.google.com/document/d/1mkxtfNhIZ20BD2QsOhvpTRsLMi4JqRs6H5rhKshgGPE/edit?usp=sharing">scraping resources</a> / discuss impossible challenges / dicuss online communities papers </dd> 
+<dt>monday, 11/24</dt><dd>project work time / <a href="https://docs.google.com/document/d/1mkxtfNhIZ20BD2QsOhvpTRsLMi4JqRs6H5rhKshgGPE/edit?usp=sharing">scraping resources</a> / discuss impossible challenges / dicuss online communities papers </dd>
 <dt>wednesday, 11/26</dt><dd>thanksgiving</dd>
-<dt>monday, 12/1</dt><dd>project work time / discuss solutions to impossible challenges</dd> 
-<dt>wednesday, 12/3</dt><dd><a href="https://docs.google.com/presentation/d/1NqzLW-UUZ1-k03H83azZqhnGjfC3Jx0Kuqluwod8QjM/pub?start=false&loop=false&delayms=15000">pecha kucha on reputation and recommendations</a> / project work time / <a href="https://docs.google.com/spreadsheets/d/1-y8-6A-E--ICpkzYlwhjK6hJpQVg5o8HVh0yTUkocn8/pubhtml?gid=776184277&single=true">post-survey</a> and quick I likes</dd> 
-</dl>
-</template>
+<dt>monday, 12/1</dt><dd>project work time / discuss solutions to impossible challenges</dd>
+<dt>wednesday, 12/3</dt><dd><a href="https://docs.google.com/presentation/d/1NqzLW-UUZ1-k03H83azZqhnGjfC3Jx0Kuqluwod8QjM/pub?start=false&loop=false&delayms=15000">pecha kucha on reputation and recommendations</a> / project work time / <a href="https://docs.google.com/spreadsheets/d/1-y8-6A-EICpkzYlwhjK6hJpQVg5o8HVh0yTUkocn8/pubhtml?gid=776184277&single=true">post-survey</a> and quick I likes</dd> -->
 
+<!--
 <template name="projects">
 <h3 id="projects_head">Student Projects</h3>
 <h4>Crowd Computing</h4>
@@ -86,11 +108,34 @@
 <hd><a href="https://docs.google.com/file/d/0B-sBIy28759kS0lEd0gtVTc4dG8/edit">Ride the Yak: Exploring Anonymity's Effect on a Location-Based Online Community</a></hd>
 <div style="clear:both"></div>
 
-</template>
+</template> -->
 
 <template name="readings">
-  <h3 id="readings_head">Read, Watch, Do, Play</h3> 
-  <dt>monday, 9/29</dt><dd><a href="https://docs.google.com/spreadsheets/d/1jAkJ5zP74AonlYYYhef7QZ65VYzvPWaUOc8pLrvz9Hs/edit#gid=1355137844">learn a new language and build something social in it</a></dd>
+  <h3 id="readings_head">Read, Watch, Do, Play</h3>
+  <dt>monday, 9/21</dt><dd><a href="https://docs.google.com/spreadsheets/d/1jAkJ5zP74AonlYYYhef7QZ65VYzvPWaUOc8pLrvz9Hs/edit#gid=1355137844">Learn a new language and build something social in it</a></dd>
+  <dt>wednesday, 9/23</dt><dd><br></dd>
+  <dt>monday, 9/28</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=0">Volunteer crowdsourcing readings</a></dd>
+  <dt>wednesday, 9/30</dt><dd>Volunteer crowdsourcing project</dd>
+  <dt>monday, 10/5</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=435611270">Crowd-powered systems readings</a></dd>
+  <dt>wednesday, 10/7</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=1410014619">Collaborative Crowdsourcing readings</a> / Crowdsourcing complex tasks project</dd>
+  <dt>monday, 10/12</dt><dd><br></dd>
+  <dt>wednesday, 10/14</dt><dd><br></dd>
+  <dt>monday, 10/19</dt><dd>Choose a topic to learn... real-time / mobile-crowdsourcing / crowdsourcing markets / crowdsourcing algorithms / Work on mid-term project </dd>
+  <dt>wednesday, 10/21</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=96754227">online communities readings</a></dd>
+  <dt>monday, 10/26</dt><dd>continue on mid-term project</dd>
+  <dt>wednesday, 10/28</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=1489701176">Q&A readings</a> / continue on mid-term project</dd>
+  <dt>monday, 11/2</dt><dd>SOCIAL COMPUTING MINI PROJECT</dd>
+  <dt>wednesday, 11/4</dt><dd><br></dd>
+  <dt>monday, 11/9</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit?pli=1#gid=555825902">Reputation & Recommendation readings</a></dd>
+  <dt>wednesday, 11/11</dt><dd>Final project proposals</dd>
+  <dt>monday, 11/16</dt><dd><br></dd>
+  <dt>wednesday, 11/18</dt><dd>OPTIONAL TOPICS</dd>
+  <dt>monday, 11/23</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit?pli=1#gid=1008357957">Impossible challenges</a></dd>
+  <dt>wednesday, 11/25</dt><dd><br></dd>
+  <dt>monday, 11/30</dt><dd><br></dd>
+  <dt>wednesday, 12/2</dt><dd><br></dd>
+  <dt>monday, 12/7</dt><dd><br></dd>
+<!--   <dt>monday, 9/29</dt><dd><a href="https://docs.google.com/spreadsheets/d/1jAkJ5zP74AonlYYYhef7QZ65VYzvPWaUOc8pLrvz9Hs/edit#gid=1355137844">learn a new language and build something social in it</a></dd>
   <dt>wednesday, 10/1</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=0">unpaid crowdsourcing</a></dd>
   <dt>monday, 10/6</dt><dd><a href="https://docs.google.com/spreadsheets/d/1JO7fbNQwXEeoNZG_Z6ZsEm7eQMAbTrRH5CjFsDRgvC8/edit#gid=0">hackathon: gwap, citizen science, unpaid crowdsourcing</a></dd>
   <dt>wednesday, 10/8</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=435611270">crowd powered systems</a></dd>
@@ -108,6 +153,6 @@
   <dt>monday, 11/24</dt><dd><a href="https://docs.google.com/forms/d/1HqLeoDRwNzTBHNV_7WLcK3Hv-liSlhwpa_YXJ8HznGo/viewform?usp=send_form">End-of-quarter project proposals due</a></dd>
   <dt>week of Thanksgiving</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/pubhtml?gid=1008357957&single=true">Ten impossible challenges</a></dd>
   <dt>wednesday, 12/3</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit?pli=1#gid=1008357957">Reputation and Recommendations</a></dd>
-  <dt>monday, 12/8</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=1637260038">Final project presentation</a> / <a href="https://docs.google.com/document/d/1ShWoMcTmpc8ZrUEsQxP7gjSH0h_2AvxYtFejzNZZWI0/edit#">Final paper</a> / <a href="https://docs.google.com/document/d/1dYD91tzHYd-AIGjz5Bf8sBf9_d0f6LKNqJ2YeOUlr50/edit">Self-assessment</a></dd>
+  <dt>monday, 12/8</dt><dd><a href="https://docs.google.com/spreadsheets/d/1J5kPjzqtvOlHD9GUQv0YXZ-W-AbAXGlKorvAnUbjLzI/edit#gid=1637260038">Final project presentation</a> / <a href="https://docs.google.com/document/d/1ShWoMcTmpc8ZrUEsQxP7gjSH0h_2AvxYtFejzNZZWI0/edit#">Final paper</a> / <a href="https://docs.google.com/document/d/1dYD91tzHYd-AIGjz5Bf8sBf9_d0f6LKNqJ2YeOUlr50/edit">Self-assessment</a></dd> -->
 </template>
 
