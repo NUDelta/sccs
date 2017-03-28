@@ -1,0 +1,8 @@
+{
+    "galaxy.meteor.com": {
+        "env": {
+            "ROOT_URL": "http://sccs.meteorapp.com",
+            "MONGO_URL": ""
+        }
+    }
+}
